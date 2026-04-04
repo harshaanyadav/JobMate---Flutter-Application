@@ -1,17 +1,71 @@
-# jobmate
+**`README.md`**
 
-A new Flutter project.
+```markdown
+# JobMate 📄
 
-## Getting Started
+A resume analyzer app built with Flutter for my college project.
+Upload your resume and it tells you which jobs you're best suited for.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## What it does
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Upload a PDF resume
+- It scans your skills automatically
+- Shows which job roles match you and by how much
+- Tells you what skills you're missing
+- Recruiter mode lets you compare multiple candidates
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## Built with
+
+- Flutter & Dart
+- fl_chart (charts)
+- syncfusion_flutter_pdf (reading PDFs)
+- file_picker (uploading files)
+
+---
+
+## How to run
+
+```bash
+git clone https://github.com/your-username/jobmate.git
+cd jobmate
+flutter pub get
+flutter run
+```
+
+---
+
+## Project structure
+
+```
+lib/
+├── main.dart
+├── models/        # data structures
+├── screens/       # all the pages
+├── services/      # resume parsing + analysis logic
+├── widgets/       # reusable components
+└── theme/         # colors and fonts
+```
+
+---
+
+## Supported job roles
+
+Data Scientist · Business Analyst · Machine Learning Engineer ·
+UI/UX Designer · Project Manager · DevOps Engineer · Digital Marketer
+
+---
+
+## Known issues
+
+- Only works with PDF resumes
+- Skill detection is keyword based, not AI
+- Some resume formats may not parse perfectly
+
+---
+
+Made by Harshaan Yadav
+```
