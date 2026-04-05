@@ -25,34 +25,24 @@ class EntranceScreen extends StatelessWidget {
                     borderRadius: BorderRadius.circular(12),
                   ),
                   child: const Center(
-                    child: Text(
-                      'JM',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 24,
-                      ),
-                    ),
+                    child: Text('JM',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 24)),
                   ),
                 ),
                 const SizedBox(height: 16),
-                const Text(
-                  'JOB MATE',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 28,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 2,
-                  ),
-                ),
+                const Text('JOB MATE',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 28,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 2)),
                 const SizedBox(height: 8),
-                Text(
-                  'Resume Analyzer & Job Matcher',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 14,
-                  ),
-                ),
+                Text('Resume Analyzer & Job Matcher',
+                    style: TextStyle(
+                        color: Colors.white.withOpacity(0.85), fontSize: 14)),
               ],
             ),
           ),
@@ -63,21 +53,13 @@ class EntranceScreen extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    const Text(
-                      'Select Your Role',
-                      style: TextStyle(
-                        fontSize: 22,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
+                    const Text('Select Your Role',
+                        style: TextStyle(
+                            fontSize: 22, fontWeight: FontWeight.bold)),
                     const SizedBox(height: 8),
-                    Text(
-                      'Choose how you want to use JobMate',
-                      style: TextStyle(
-                        fontSize: 14,
-                        color: Colors.grey.shade600,
-                      ),
-                    ),
+                    Text('Choose how you want to use JobMate',
+                        style: TextStyle(
+                            fontSize: 14, color: Colors.grey.shade600)),
                     const SizedBox(height: 40),
                     _RoleCard(
                       title: 'Student / Job Seeker',
@@ -88,8 +70,7 @@ class EntranceScreen extends StatelessWidget {
                       onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (_) => const JobSeekerFormScreen(),
-                        ),
+                            builder: (_) => const JobSeekerFormScreen()),
                       ),
                     ),
                     const SizedBox(height: 16),
@@ -101,8 +82,7 @@ class EntranceScreen extends StatelessWidget {
                       onTap: () => Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (_) => const RecruiterFormScreen(),
-                        ),
+                            builder: (_) => const RecruiterFormScreen()),
                       ),
                     ),
                   ],
@@ -147,7 +127,7 @@ class _RoleCard extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                  color: Colors.white.withOpacity(0.2),
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Icon(icon, color: Colors.white, size: 28),
@@ -157,30 +137,21 @@ class _RoleCard extends StatelessWidget {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      title,
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 17,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
+                    Text(title,
+                        style: const TextStyle(
+                            color: Colors.white,
+                            fontSize: 17,
+                            fontWeight: FontWeight.bold)),
                     const SizedBox(height: 4),
-                    Text(
-                      subtitle,
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 13,
-                      ),
-                    ),
+                    Text(subtitle,
+                        style: TextStyle(
+                            color: Colors.white.withOpacity(0.85),
+                            fontSize: 13)),
                   ],
                 ),
               ),
-              const Icon(
-                Icons.arrow_forward_ios,
-                color: Colors.white,
-                size: 16,
-              ),
+              const Icon(Icons.arrow_forward_ios,
+                  color: Colors.white, size: 16),
             ],
           ),
         ),
