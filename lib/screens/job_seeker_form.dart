@@ -223,8 +223,10 @@ class _JobSeekerFormScreenState extends State<JobSeekerFormScreen> {
               children: [
                 Radio<String>(
                   value: g,
+                  // ignore: deprecated_member_use
                   groupValue: _gender,
                   activeColor: AppTheme.green,
+                  // ignore: deprecated_member_use
                   onChanged: (v) => setState(() => _gender = v!),
                 ),
                 Text(g),

@@ -49,7 +49,7 @@ class EntranceScreen extends StatelessWidget {
                 Text(
                   'Resume Analyzer & Job Matcher',
                   style: TextStyle(
-                    color: Colors.white.withOpacity(0.85),
+                    color: Colors.white,
                     fontSize: 14,
                   ),
                 ),
@@ -147,7 +147,7 @@ class _RoleCard extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: Icon(icon, color: Colors.white, size: 28),
@@ -169,7 +169,7 @@ class _RoleCard extends StatelessWidget {
                     Text(
                       subtitle,
                       style: TextStyle(
-                        color: Colors.white.withOpacity(0.85),
+                        color: Colors.white,
                         fontSize: 13,
                       ),
                     ),

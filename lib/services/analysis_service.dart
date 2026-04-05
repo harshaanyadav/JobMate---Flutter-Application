@@ -49,8 +49,9 @@ class AnalysisService {
 
   static String getBenchmarkText(List<String> skills, String jobRole) {
     final missing = getMissingSkills(skills, jobRole);
-    if (missing.isEmpty)
+    if (missing.isEmpty) {
       return 'Your skills meet or exceed industry benchmarks for $jobRole.';
+    }
     return 'For $jobRole, consider gaining: ${missing.take(5).join(', ')}${missing.length > 5 ? '...' : ''}';
   }
 
@@ -65,8 +66,9 @@ class AnalysisService {
     ];
     final lower = resumeText.toLowerCase();
     final matched = keywords.where((k) => lower.contains(k)).toList();
-    if (matched.isEmpty)
+    if (matched.isEmpty) {
       return 'Soft skills could not be evaluated from resume text.';
+    }
     return 'Shows strong skills in ${matched.join(', ')}.';
   }
 }

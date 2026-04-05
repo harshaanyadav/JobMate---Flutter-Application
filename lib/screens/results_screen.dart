@@ -4,7 +4,7 @@ import '../models/job_roles.dart';
 import '../services/analysis_service.dart';
 import '../theme/app_theme.dart';
 import '../widgets/charts_dashboard.dart';
-import 'job_seeker_form.dart';
+// import 'job_seeker_form.dart';
 
 class ResultsScreen extends StatelessWidget {
   final String name;
@@ -94,7 +94,7 @@ class ResultsScreen extends StatelessWidget {
                       children: [
                         CircleAvatar(
                           radius: 14,
-                          backgroundColor: color.withOpacity(0.15),
+                          backgroundColor: color,
                           child: Text(
                             '$rank',
                             style: TextStyle(
